@@ -1,0 +1,28 @@
+:root{
+    --dark-blue: #002663;
+    --light-blue:#9dd1ef;
+    --lighter-blue:#b6ddf2;
+    --white:#fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#hero{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
+}
+.hero_content{
+    position: relative;
+    color: var(--white);
+}
+.hero_content h4{
+    padding: 10px;
+    background-color: var(--dark-blue);
+    margin-right: auto;
+}
