@@ -11,18 +11,311 @@
     box-sizing: border-box;
 }
 
+
 #hero{
     min-height: 100vh;
     height: 100%;
-    width: 100%;
+    width: auto;
     background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
+
 .hero_content{
     position: relative;
     color: var(--white);
+    
 }
-.hero_content h4{
-    padding: 10px;
+
+.header_top{
+    margin-top: 30px;
+    color: var(--white);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header_top h4{
+    padding: 5px 15px;
     background-color: var(--dark-blue);
     margin-right: auto;
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 10px;
+}
+
+.header_top span{
+    background-color: var(--dark-blue);
+    /* padding: 5px 10px; */
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main_content{
+    position: relative;
+}
+
+.main_content .header2{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-top: 50px;
+}
+
+.main_content .header2 h4{
+    font-size: 15px;
+}
+
+.main_content .centered_content{
+    position: absolute;
+    left: 50%;
+    top: 40vh;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark-blue);
+    padding: 20px;
+}
+
+
+.main_content .centered_content p{
+    text-align: center;
+    font-size: 13px;
+}
+
+#footer{
+    color: var(--dark-blue);
+    position: absolute;
+    bottom: 30px;
+    right: 110px;
+}
+
+.icons{
+    color: black;
+}
+
+.first_part{
+    position: relative;
+}
+
+.icons .home_icon{
+    position: absolute;
+    top:-40px;
+    height: 60px;
+    left: 100px;
+}
+
+.dash_1{
+    width: 835px;
+    position: absolute;
+    top: -10px;
+    left: 190px;
+    border: 1px dashed black;
+}
+
+.arrow_left_1{
+    position: absolute;
+    top: -22px;
+    left: 185px;
+}
+
+.icons .baggage_icon{
+    position: absolute;
+    top: -40px;
+    height: 60px;
+    right: 75vh;
+}
+
+.arrow_left_2{
+    position: absolute;
+    top: -22px;
+    right: 350px;
+}
+
+.arrow_left_3{
+    position: absolute;
+    top: -22px;
+    right: 130px;
+}
+
+.second_part .left_part{
+    position: relative;
+    top: 30px;
+}
+
+.dash_2{
+    height: 10px;
+    border: 1px dashed black;
+    width: 1px;
+    left: 130px;
+    position: absolute;
+}
+
+.dash_3{
+    width:80px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 13px;
+    left: 52px;
+}
+
+.arrow_left_4{
+    position: absolute;
+    top:1px;
+    left: 90px;
+}
+
+.dash_4{
+    height: 10px;
+    width: 1px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 15px;
+    left: 51.7px;
+}
+
+.checking_icon{
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+.dash_5{
+    width: 95px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 60px;
+    left: 95px;
+}
+
+.arrow_right_1{
+    position: absolute;
+    top: 48px;
+    left: 130px;
+}
+
+.all_clear_icon{
+    height: 60px;
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+
+
+
+.second_part .right_part{
+    position: relative;
+    left: 60%;
+}
+
+.dash_6{
+    width: 10px;
+    position: absolute;
+    border: 1px dashed black;
+    top: 80px;
+    /* left: 100px; */
+}
+
+.clearing_entry_icon{
+    position: absolute;
+    top: 50px;
+    height: 60px;
+    left: 15px;
+}
+
+.dash_7{
+    width: 80px;
+    top: 80px;
+    position: absolute;
+    left: 80px;
+    border: 1px dashed black;
+}
+
+.arrow_right_2{
+    position: absolute;
+    top: 68px;
+    left: 110px;
+}
+
+.covid_icon{
+    height: 60px;
+    position: absolute;
+    top: 50px;
+    left: 167px;
+}
+
+.dash_8{
+    height: 50px;
+    border: 1px dashed black;
+    top: -2px;
+    position: absolute;
+    left: 190px;
+}
+
+.third_part .left_part{
+    position: relative;
+    width: 50%;
+}
+
+.going_abroad_icon{
+    height: 60px;
+    position: absolute;
+    top: 138px;
+    left: 100px;
+}
+
+.dash_9{
+    width: 200px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 135px;
+    left: 130px;
+}
+
+.arrow_down_1{
+    position: absolute;
+    left:225px;
+    top: 115px;
+}
+
+.dash_10{
+    height: 10px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 118px;
+    left: 231px;
+}
+
+.border_control{
+    height: 60px;
+    position: absolute;
+    right: 190px;
+    top: 139px;
+}
+
+.dash_11{
+    width: 200px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+}
+
+.third_part .right_part{
+    position: relative;
+    left: 60%;
+}
+
+.dash_12{
+    height: 80px;
+    border: 1px dashed black;
+    width: 1px;
+    position: absolute;
+    top: 80px;
+    left: 0;
 }
