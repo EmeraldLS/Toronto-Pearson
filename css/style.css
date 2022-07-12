@@ -15,17 +15,16 @@
 #hero{
     min-height: 100vh;
     height: 100%;
-    width: auto;
+    width: 100%;
     background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
-    overflow-x: auto;
+    background-size: 100% 100%;
     overflow-y: hidden;
-    white-space: nowrap;
 }
 
 .hero_content{
     position: relative;
     color: var(--white);
-    
+    padding-top: 50px;
 }
 
 .header_top{
@@ -74,7 +73,7 @@
 .main_content .centered_content{
     position: absolute;
     left: 50%;
-    top: 40vh;
+    top: 20vh;
     border-radius: 100%;
     transform: translate(-50%, -50%);
     background-color: var(--dark-blue);
@@ -210,7 +209,6 @@
 
 .second_part .right_part{
     position: relative;
-    left: 60%;
 }
 
 .dash_6{
@@ -218,35 +216,35 @@
     position: absolute;
     border: 1px dashed black;
     top: 80px;
-    /* left: 100px; */
+    right: 432px;
 }
 
 .clearing_entry_icon{
     position: absolute;
     top: 50px;
     height: 60px;
-    left: 15px;
+    right: 367px;
 }
 
 .dash_7{
     width: 80px;
     top: 80px;
     position: absolute;
-    left: 80px;
+    right: 283px;
     border: 1px dashed black;
 }
 
 .arrow_right_2{
     position: absolute;
     top: 68px;
-    left: 110px;
+    right: 330px;
 }
 
 .covid_icon{
     height: 60px;
     position: absolute;
     top: 50px;
-    left: 167px;
+    right: 220px;
 }
 
 .dash_8{
@@ -254,7 +252,7 @@
     border: 1px dashed black;
     top: -2px;
     position: absolute;
-    left: 190px;
+    right: 250px;
 }
 
 .third_part .left_part{
@@ -308,7 +306,7 @@
 
 .third_part .right_part{
     position: relative;
-    left: 60%;
+    
 }
 
 .dash_12{
@@ -317,5 +315,128 @@
     width: 1px;
     position: absolute;
     top: 80px;
-    left: 0;
+    right: 440px;
+}
+
+.arrow_up_1{
+    position: absolute;
+    top: 120px;
+    right: 433px;
+}
+
+.custom_png_icon{
+    height: 60px;
+    position: absolute;
+    top: 165px;
+    right: 410px;
+}
+
+.dash_13{
+    width: 290px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 210px;
+    right: 120px;
+}
+
+.custom2_icon{
+    height: 60px;
+    position: absolute;
+    top: 165px;
+    right: 60px;
+}
+
+.dash_14{
+    height: 165px;
+    width: 1px;
+    border: 1px dashed black;
+    position: absolute;
+    top: -5px;
+    right: 90px;
+}
+
+.arrow_up_2{
+    position: absolute;
+    top: 120px;
+    right: 84px;
+}
+.fourth_part{
+    position: relative;
+}
+
+.dash_15{
+    height: 30px;
+    border:1px dashed black;
+    width: 1px;
+    position: absolute;
+    top: 200px;
+    left: 230px;
+}
+
+.border_control_icon2{
+    height: 60px;
+    position: absolute;
+    top: 230px;
+    left: 200px;
+}
+
+.dash_16{
+    width: 530px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 250px;
+    left: 260px;
+}
+
+.arrow_right_3{
+    position: absolute;
+    top: 238px;
+    left: 330px;
+}
+
+.flight_depart_icon{
+    height: 60px;
+    position: absolute;
+    top: 230px;
+    left: 400px;
+}
+
+.arrow_right_4{
+    position: absolute;
+    top: 238px;
+    left: 520px;
+}
+
+.arrived_icon{
+    height: 60px;
+    position: absolute;
+    top: 230px;
+    left: 610px;
+}
+
+.arrow_right_5{
+    position: absolute;
+    top: 238px;
+    left: 700px;
+}
+
+.welcome_icon{
+    height: 60px;
+    position: absolute;
+    top: 230px;
+    left: 780px;
+}
+
+.dash_17{
+    height: 15px;
+    border: 1px dashed black;
+    position: absolute;
+    top: 215px;
+    left: 805px;
+}
+
+.arrow_up_3{
+    position: absolute;
+    top: 210px;
+    left: 799px;
 }
