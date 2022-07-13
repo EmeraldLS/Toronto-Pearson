@@ -326,6 +326,17 @@ body {
     .dash_17{
         display: none;
     }
+    .dash_6{
+        width: 60px !important;
+        top: 140px !important;
+        left: 480px !important;
+    }
+    .dash_13{
+        display: none;
+    }
+    .arrow_up_2{
+        display: none;
+    }
   }
 
 .main_content .header2 h4:last-child {
