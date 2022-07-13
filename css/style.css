@@ -1,33 +1,60 @@
-:root{
+:root {
     --dark-blue: #002663;
-    --light-blue:#9dd1ef;
-    --lighter-blue:#b6ddf2;
-    --white:#fff;
+    --light-blue: #9dd1ef;
+    --lighter-blue: #b6ddf2;
+    --white: #fff;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to right, var(--light-blue) 60%, var(--lighter-blue) 60%);
+}
 
-#hero{
+
+
+#hero {
+    /* padding: 0 100px; */
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
-    background-size: 100% 100%;
-    overflow-y: hidden;
 }
 
-.hero_content{
+#hero::before {
+    height: 100vh;
+    width: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--light-blue);
+    z-index: -1;
+}
+
+#hero::after {
+    height: 100vh;
+    width: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-color: var(--lighter-blue);
+    z-index: -1;
+}
+
+.hero_content {
     position: relative;
     color: var(--white);
     padding-top: 50px;
+    background-color: red;
+
 }
 
-.header_top{
+.header_top {
     margin-top: 30px;
     color: var(--white);
     display: flex;
@@ -35,7 +62,7 @@
     justify-content: space-between;
 }
 
-.header_top h4{
+.header_top h4 {
     padding: 5px 15px;
     background-color: var(--dark-blue);
     margin-right: auto;
@@ -44,7 +71,7 @@
     border-radius: 10px;
 }
 
-.header_top span{
+.header_top span {
     background-color: var(--dark-blue);
     /* padding: 5px 10px; */
     height: 30px;
@@ -55,150 +82,185 @@
     border-radius: 50%;
 }
 
-.main_content{
+
+
+.main_content .header2 {
+    color: black;
+    margin-top: 50px;
     position: relative;
 }
 
-.main_content .header2{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    margin-top: 50px;
-}
-
-.main_content .header2 h4{
-    font-size: 15px;
-}
-
-.main_content .centered_content{
+.main_content .header2 h4:first-child {
+    font-size: 18px;
     position: absolute;
-    left: 50%;
-    top: 20vh;
+    top: -15px;
+}
+
+.main_content .header2 h4:last-child {
+    font-size: 18px;
+    left: 1040px;
+    top: -15px;
+    position: absolute;
+}
+
+@media (max-width:1199px) {
+    .main_content .header2 {
+        margin-right: 200px;
+    }
+}
+
+.main_content .centered_content {
+    position: absolute;
+    left: 480px;
+    top: 25vh;
     border-radius: 100%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
     background-color: var(--dark-blue);
-    padding: 20px;
+    padding: 20px 30px;
+}
+
+.centered_content_md_screen {
+    display: none;
+    position: absolute;
+    left: 480px;
+    top: 25vh;
+    border-radius: 100%;
+    /* transform: translate(-50%, -50%); */
+    background-color: var(--dark-blue);
+}
+
+@media (max-width:1200px) {
+    .main_content .centered_content {
+        left: 460px;
+    }
+}
+
+@media (min-height:841px) {
+    .main_content .centered_content {
+        top: 20vh;
+    }
 }
 
 
-.main_content .centered_content p{
+.main_content .centered_content p {
     text-align: center;
     font-size: 13px;
 }
 
-#footer{
+#footer {
     color: var(--dark-blue);
     position: absolute;
     bottom: 30px;
     right: 110px;
 }
 
-.icons{
+.icons {
     color: black;
 }
 
-.first_part{
+.first_part {
     position: relative;
+    margin-top: 80px;
 }
 
-.icons .home_icon{
+.icons .home_icon {
     position: absolute;
-    top:-40px;
+    top: -40px;
     height: 60px;
     left: 100px;
 }
 
-.dash_1{
+.dash_1 {
     width: 835px;
     position: absolute;
     top: -10px;
     left: 190px;
-    border: 1px dashed black;
+    border: 1px dotted black;
 }
 
-.arrow_left_1{
+.arrow_left_1 {
     position: absolute;
     top: -22px;
     left: 185px;
 }
 
-.icons .baggage_icon{
+.icons .baggage_icon {
     position: absolute;
     top: -40px;
     height: 60px;
-    right: 75vh;
+    left: 600px;
 }
 
-.arrow_left_2{
+.arrow_left_2 {
     position: absolute;
     top: -22px;
-    right: 350px;
+    left: 750px;
 }
 
-.arrow_left_3{
+.arrow_left_3 {
     position: absolute;
     top: -22px;
-    right: 130px;
+    left: 935px;
 }
 
-.second_part .left_part{
+.second_part .left_part {
     position: relative;
     top: 30px;
 }
 
-.dash_2{
+.dash_2 {
     height: 10px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     width: 1px;
     left: 130px;
     position: absolute;
 }
 
-.dash_3{
-    width:80px;
-    border: 1px dashed black;
+.dash_3 {
+    width: 80px;
+    border: 1px dotted black;
     position: absolute;
     top: 13px;
     left: 52px;
 }
 
-.arrow_left_4{
+.arrow_left_4 {
     position: absolute;
-    top:1px;
+    top: 1px;
     left: 90px;
 }
 
-.dash_4{
+.dash_4 {
     height: 10px;
     width: 1px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 15px;
     left: 51.7px;
 }
 
-.checking_icon{
+.checking_icon {
     height: 60px;
     position: absolute;
     top: 30px;
     left: 25px;
 }
 
-.dash_5{
+.dash_5 {
     width: 95px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 60px;
     left: 95px;
 }
 
-.arrow_right_1{
+.arrow_right_1 {
     position: absolute;
     top: 48px;
     left: 130px;
 }
 
-.all_clear_icon{
+.all_clear_icon {
     height: 60px;
     position: absolute;
     left: 200px;
@@ -207,236 +269,306 @@
 
 
 
-.second_part .right_part{
+.second_part .right_part {
     position: relative;
 }
 
-.dash_6{
+.dash_6 {
     width: 10px;
     position: absolute;
-    border: 1px dashed black;
+    border: 1px dotted black;
     top: 80px;
-    right: 432px;
+    left: 677px;
 }
 
-.clearing_entry_icon{
+.clearing_entry_icon {
     position: absolute;
     top: 50px;
     height: 60px;
-    right: 367px;
+    left: 690px;
 }
 
-.dash_7{
+.dash_7 {
     width: 80px;
     top: 80px;
     position: absolute;
-    right: 283px;
-    border: 1px dashed black;
+    left: 755px;
+    border: 1px dotted black;
 }
 
-.arrow_right_2{
+.arrow_right_2 {
     position: absolute;
     top: 68px;
-    right: 330px;
+    left: 790px;
 }
 
-.covid_icon{
+.covid_icon {
     height: 60px;
     position: absolute;
     top: 50px;
-    right: 220px;
+    left: 840px;
 }
 
-.dash_8{
+.dash_8 {
     height: 50px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     top: -2px;
     position: absolute;
-    right: 250px;
+    left: 865px;
 }
 
-.third_part .left_part{
+.third_part .left_part {
     position: relative;
-    width: 50%;
+    /* width: 50%; */
 }
 
-.going_abroad_icon{
+.going_abroad_icon {
     height: 60px;
     position: absolute;
     top: 138px;
     left: 100px;
 }
 
-.dash_9{
+.dash_9 {
     width: 200px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 135px;
     left: 130px;
 }
 
-.arrow_down_1{
+.arrow_down_1 {
     position: absolute;
-    left:225px;
+    left: 225px;
     top: 115px;
 }
 
-.dash_10{
+.dash_10 {
     height: 10px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 118px;
     left: 231px;
 }
 
-.border_control{
+.border_control {
     height: 60px;
     position: absolute;
-    right: 190px;
+    left: 300px;
     top: 139px;
 }
 
-.dash_11{
+.dash_11 {
     width: 200px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 200px;
     left: 130px;
 }
 
-.third_part .right_part{
+.third_part .right_part {
     position: relative;
-    
+
 }
 
-.dash_12{
+.dash_12 {
     height: 80px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     width: 1px;
     position: absolute;
     top: 80px;
-    right: 440px;
+    left: 675px;
 }
 
-.arrow_up_1{
+.arrow_up_1 {
     position: absolute;
     top: 120px;
-    right: 433px;
+    left: 670px;
 }
 
-.custom_png_icon{
+.custom_png_icon {
     height: 60px;
     position: absolute;
     top: 165px;
-    right: 410px;
+    left: 645px;
 }
 
-.dash_13{
+.dash_13 {
     width: 290px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 210px;
-    right: 120px;
+    left: 705px;
 }
 
-.custom2_icon{
+.custom2_icon {
     height: 60px;
     position: absolute;
     top: 165px;
-    right: 60px;
+    left: 995px;
 }
 
-.dash_14{
+.dash_14 {
     height: 165px;
     width: 1px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: -5px;
-    right: 90px;
+    left: 1025px;
 }
 
-.arrow_up_2{
+.arrow_up_2 {
     position: absolute;
     top: 120px;
-    right: 84px;
+    left: 1019px;
 }
-.fourth_part{
+
+.fourth_part {
     position: relative;
 }
 
-.dash_15{
+.dash_15 {
     height: 30px;
-    border:1px dashed black;
+    border: 1px dotted black;
     width: 1px;
     position: absolute;
     top: 200px;
     left: 230px;
 }
 
-.border_control_icon2{
+.border_control_icon2 {
     height: 60px;
     position: absolute;
     top: 230px;
     left: 200px;
 }
 
-.dash_16{
+.dash_16 {
     width: 530px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 250px;
     left: 260px;
 }
 
-.arrow_right_3{
+.arrow_right_3 {
     position: absolute;
     top: 238px;
     left: 330px;
 }
 
-.flight_depart_icon{
+.flight_depart_icon {
     height: 60px;
     position: absolute;
     top: 230px;
     left: 400px;
 }
 
-.arrow_right_4{
+.arrow_right_4 {
     position: absolute;
     top: 238px;
     left: 520px;
 }
 
-.arrived_icon{
+.arrived_icon {
     height: 60px;
     position: absolute;
     top: 230px;
     left: 610px;
 }
 
-.arrow_right_5{
+.arrow_right_5 {
     position: absolute;
     top: 238px;
     left: 700px;
 }
 
-.welcome_icon{
+.welcome_icon {
     height: 60px;
     position: absolute;
     top: 230px;
     left: 780px;
 }
 
-.dash_17{
+.dash_17 {
     height: 15px;
-    border: 1px dashed black;
+    border: 1px dotted black;
     position: absolute;
     top: 215px;
     left: 805px;
 }
 
-.arrow_up_3{
+.arrow_up_3 {
     position: absolute;
     top: 210px;
     left: 799px;
+}
+
+@media (max-width:1200px) {
+
+    .hero_content {
+        left: -80px;
+    }
+}
+
+@media (max-width:992px) {
+    .hero_content {
+        overflow-y: hidden !important;
+        height: 100vh;
+    }
+
+    #hero::before {
+        width: 75%;
+        position: fixed;
+    }
+
+    /* #hero::after {
+        left: 75%;
+        width: 75%;
+    } */
+
+    .header_top {
+        position: fixed;
+        left: 50px;
+    }
+
+    .header_top span {
+        position: absolute;
+        left: 300px;
+    }
+}
+
+@media (max-width:991.98px) {
+    #hero {
+        width: auto;
+    }
+
+    #hero::before {
+        width: 70%;
+    }
+
+    #hero::after {
+        left: 70%;
+        width: 70%;
+    }
+}
+
+@media (max-width:767.98px) {
+
+    .main_content .centered_content {
+        display: none;
+    }
+
+    .centered_content_md_screen p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .centered_content_md_screen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+    }
 }
