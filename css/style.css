@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, var(--light-blue) 60%, var(--lighter-blue) 60%);
+    max-height: 100vh;
 }
 
 
@@ -514,7 +514,7 @@ body {
 @media (max-width:992px) {
     .hero_content {
         overflow-y: hidden !important;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     #hero::before {
@@ -543,14 +543,6 @@ body {
         width: 140%;
     }
 
-    #hero::before {
-        width: 70%;
-    }
-
-    #hero::after {
-        left: 70%;
-        width: 70%;
-    }
 }
 
 @media (max-width:767.98px) {
