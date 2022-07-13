@@ -250,14 +250,28 @@ body {
     top: -70px;
     left: 10px;
   }
-
+  .main_content .header2 h4:last-child{
+    left: 525px !important;
+    top: -70px !important;
+  }
+  
   .home_icon{
     left: 10px !important;
     height: 30px !important;
   }
 
   .dash_1{
-    top: -55px !important;
+    top: -25px !important;
+    left: 40px !important;
+    width: 400px;
+  }
+  .arrow_left_1{
+    top: -37px !important;
+    left: 45px !important;
+  }
+  .baggage_icon{
+    left: 540px !important;
+    height: 30px !important;
   }
 }
 
@@ -292,6 +306,7 @@ body {
 @media (max-width:991.98px) {
   .main_content .centered_content{
     top: 13% !important;
+    display: none;
   }
 }
 
