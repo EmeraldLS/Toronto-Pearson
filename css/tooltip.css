@@ -48,6 +48,12 @@
   z-index: 1;
 }
 
+@media (max-width:768px) {
+  .mytooltip1 .mytooltiptext7{
+    left: 580px;
+  }
+}
+
 .mytooltip1 .mytooltiptext1 {
   visibility: hidden;
   position: absolute;
@@ -88,6 +94,11 @@
   z-index: 1;
 }
 
+@media (max-width:768px) {
+  .mytooltiptext3{
+    left: 510px !important;
+  }
+}
 .mytooltip1 .mytooltiptext4 {
   visibility: hidden;
   position: absolute;
@@ -107,6 +118,15 @@
   position: absolute;
   z-index: 1;
 }
+
+@media (max-width:768px) {
+  .mytooltiptext4{
+    left: 510px !important;
+    top: 0 !important;
+  }
+}
+
+
 
 .mytooltiptext5 {
   visibility: hidden;
