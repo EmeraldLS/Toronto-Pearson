@@ -11,8 +11,8 @@
 .mytooltip1 .mytooltiptext2 {
   visibility: hidden;
   position: absolute;
-  left: 90px;
-  top: 0;
+  left: 200px;
+  top: 10px;
   width: 200px;
   background-color: white;
   color: black;
@@ -20,7 +20,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(33% 0%, 33% 25%, 100% 25%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
   /* Position the tooltip */
   position: absolute;
@@ -41,7 +41,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(33% 0%, 33% 25%, 100% 25%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -51,7 +51,7 @@
 .mytooltip1 .mytooltiptext1 {
   visibility: hidden;
   position: absolute;
-  left: 270px;
+  left: 370px;
   top: 0;
 
   width: 150px;
@@ -61,7 +61,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(45% 0%, 45% 25%, 100% 25%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -81,7 +81,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(60% 0%, 60% 25%, 100% 25%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
