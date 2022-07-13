@@ -112,7 +112,7 @@
   visibility: hidden;
   position: absolute;
   left: 280px;
-  top: 115px;
+  top: 300px;
 
   width: 200px;
   background-color: white;
@@ -121,7 +121,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(65% 0, 65% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(60% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -131,8 +131,25 @@
 .mytooltiptext6 {
   visibility: hidden;
   position: absolute;
-  left: 850px;
-  top: 165px;
+  left: 830px;
+  top: 200px;
+
+  width: 200px;
+  background-color: white;
+  color: black;
+  padding-top: 20px !important;
+  padding: 10px;
+  border-radius: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.mytooltiptext8 {
+  visibility: hidden;
+  position: absolute;
+  left: 680px;
+  top: 220px;
 
   width: 200px;
   background-color: white;
@@ -141,7 +158,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(75% 0, 75% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(60% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -158,7 +175,8 @@
 .mytooltip1:hover .mytooltiptext4,
 .mytooltip1:hover .mytooltiptext5,
 .mytooltip1:hover .mytooltiptext6,
-.mytooltip1:hover .mytooltiptext7 {
+.mytooltip1:hover .mytooltiptext7,
+.mytooltip1:hover .mytooltiptext8 {
   animation-name: showtooltip;
   animation-duration: 0.4s;
   animation-fill-mode: forwards;
