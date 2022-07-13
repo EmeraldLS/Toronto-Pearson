@@ -17,6 +17,7 @@ body {
     max-height: 100vh;
     font-family: 'Quicksand', sans-serif;
     background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
+    overflow-y: hidden;
 }
 
 
