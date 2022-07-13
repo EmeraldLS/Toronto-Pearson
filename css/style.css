@@ -51,7 +51,6 @@ body {
     color: var(--white);
     padding-top: 50px;
     /* background-color: red; */
-
 }
 
 .header_top {
@@ -69,6 +68,11 @@ body {
     font-size: 16px;
     font-weight: 550;
     border-radius: 10px;
+}
+
+.learn_more {
+    display: none;
+    color: var(--dark-blue);
 }
 
 .header_top span {
@@ -175,7 +179,8 @@ body {
     position: absolute;
     top: -10px;
     left: 190px;
-    border: 1px dotted black;
+    border-bottom: 1px dotted black;
+    letter-spacing: 10px;
 }
 
 .arrow_left_1 {
@@ -504,31 +509,70 @@ body {
     left: 799px;
 }
 
+.scroll_more {
+    display: none;
+}
+
+@media (max-width:1199.98px) {
+    .hero_content {
+        left: -80px;
+    }
+}
+
 
 @media (max-width:992px) {
     .hero_content {
         overflow-y: hidden !important;
         min-height: 100vh;
+        left: 0;
     }
 
     #hero {
         width: 100%;
     }
 
-    .header_top {
-        position: fixed;
-        left: 50px;
-    }
 
     .header_top span {
         position: absolute;
-        left: 300px;
+        right: 10%;
+    }
+
+    .scroll_more {
+        display: block;
+        color: black;
+        position: absolute;
+        top: 65vh;
+        left: 50%;
     }
 }
 
-@media (max-width:991.98px) {}
+@media (max-width:991.98px) {
+    #hero::before {
+        width: 70%;
+    }
+
+    #hero::after {
+        left: 70%;
+        width: 30%;
+    }
+}
 
 @media (max-width:767.98px) {
+
+    .header_top {
+        width: 100%;
+        position: fixed;
+        left: 20px;
+    }
+
+    .header_top span {
+        top: 20px;
+
+    }
+
+    .header_top h4 {
+        width: 145px;
+    }
 
     .main_content .centered_content {
         display: none;
@@ -545,5 +589,27 @@ body {
         justify-content: center;
         width: 150px;
         height: 150px;
+    }
+
+    .learn_more {
+        display: block;
+        position: relative;
+        top: 100px;
+    }
+
+    .learn_more h5 {
+        font-size: 14px;
+    }
+
+    .learn_more h6 {
+        font-size: 10px;
+    }
+
+    .hero_content {
+        top: 50px;
+    }
+
+    #footer {
+        left: 40px;
     }
 }
