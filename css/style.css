@@ -16,6 +16,7 @@
 body {
     max-height: 100vh;
     font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to right, var(--light-blue) 50%, var(--lighter-blue) 50%);
 }
 
 
@@ -25,28 +26,6 @@ body {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-}
-
-#hero::before {
-    height: 100vh;
-    width: 50%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--light-blue);
-    z-index: -1;
-}
-
-#hero::after {
-    height: 100vh;
-    width: 50%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    background-color: var(--lighter-blue);
-    z-index: -1;
 }
 
 .hero_content {
@@ -63,16 +42,17 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     z-index: 5;
+    position: relative;
 }
 
 .header_top h4 {
-
     padding: 5px 15px;
     background-color: var(--dark-blue);
     margin-right: auto;
     font-size: 16px;
     font-weight: bolder;
     border-radius: 10px;
+
 }
 
 .learn_more {
@@ -100,16 +80,19 @@ body {
 }
 
 .main_content .header2 h4:first-child {
-    font-size: 18px;
+    font-size: 20px;
     position: absolute;
-    top: -15px;
+    top: -20px;
+    left: 70px;
+    font-weight: bolder;
 }
 
 .main_content .header2 h4:last-child {
-    font-size: 18px;
+    font-size: 20px;
     left: 1040px;
     top: -15px;
     position: absolute;
+    font-weight: 700;
 }
 
 @media (max-width:1199px) {
@@ -133,8 +116,9 @@ body {
 }
 
 .main_content .centered_content p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .centered_content_md_screen {
@@ -166,6 +150,7 @@ body {
     position: absolute;
     bottom: 30px;
     right: 110px;
+    font-weight: bolder;
 }
 
 .icons {
