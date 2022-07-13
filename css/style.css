@@ -50,7 +50,7 @@ body {
     position: relative;
     color: var(--white);
     padding-top: 50px;
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -540,7 +540,7 @@ body {
 
 @media (max-width:991.98px) {
     #hero {
-        width: auto;
+        width: 140%;
     }
 
     #hero::before {
