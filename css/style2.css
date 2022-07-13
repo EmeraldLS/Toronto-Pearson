@@ -47,6 +47,29 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .show_nav {
+    top: 10px;
+    right: 14%;
+  }
+}
+
+@media (max-width: 450px) {
+  .show_nav {
+    right: 30px;
+    top: 70px;
+  }
+  .show_nav.show {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .show_nav.show {
+    flex-direction: column;
+  }
+}
+
 .show_nav.show {
   padding: 15px;
   width: auto;
