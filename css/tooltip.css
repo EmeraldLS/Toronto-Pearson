@@ -13,14 +13,14 @@
   position: absolute;
   left: 200px;
   top: 0;
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(40% 0, 40% 15%, 100% 15%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(30% 0, 30% 12%, 100% 12%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
   /* Position the tooltip */
   position: absolute;
@@ -41,14 +41,14 @@
   position: absolute;
   left: 670px;
   top: -80px;
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(35% 0, 35% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -67,14 +67,14 @@
   left: 270px;
   top: 0;
 
-  width: 150px;
+  width: 200px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(39% 0, 39% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -94,14 +94,14 @@
   left: 770px;
   top: 0;
 
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(55% 0, 55% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -120,14 +120,14 @@
   left: 810px;
   top: 115px;
 
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(55% 0, 55% 15%, 100% 15%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(45% 0, 45% 15%, 100% 15%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -149,14 +149,14 @@
   left: 280px;
   top: 115px;
 
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(65% 0, 65% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(50% 0, 50% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -169,14 +169,14 @@
   left: 850px;
   top: 165px;
 
-  width: 200px;
+  width: 300px;
   background-color: white;
   color: black;
   /* margin-left: 10px; */
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(75% 0, 75% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(55% 0, 55% 10%, 100% 10%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px;
   /* Position the tooltip */
   position: absolute;
@@ -213,7 +213,7 @@
 }
 
 .mytooltip_header1 {
-  font-size: 11px;
+  font-size: 13px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -254,5 +254,5 @@
 }
 
 .mytooltip_content1 {
-  font-size: 8px;
+  font-size: 12px;
 }

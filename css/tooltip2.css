@@ -20,7 +20,7 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(33% 0%, 33% 25%, 100% 25%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(36% 0%, 36% 15%, 100% 15%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
   /* Position the tooltip */
   position: absolute;
@@ -68,9 +68,7 @@
 }
 
 @media (max-width:767.98px) {
-  .mytooltip1 .mytooltiptext7{
-
-  }
+  .mytooltip1 .mytooltiptext7 {}
 }
 
 .mytooltip1 .mytooltiptext1 {

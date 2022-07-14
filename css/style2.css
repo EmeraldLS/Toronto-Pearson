@@ -16,11 +16,9 @@
 body {
   max-height: 100vh;
   font-family: "Quicksand", sans-serif;
-  background-image: linear-gradient(
-    to right,
-    var(--light-blue) 50%,
-    var(--lighter-blue) 50%
-  );
+  background-image: linear-gradient(to right,
+      var(--light-blue) 50%,
+      var(--lighter-blue) 50%);
   overflow-y: hidden;
 }
 
@@ -41,7 +39,8 @@ body {
     top: 35px;
     right: 0;
   }
-  .show_nav.show .show_nav_content{
+
+  .show_nav.show .show_nav_content {
     flex-direction: column;
     align-items: flex-start !important;
     justify-content: flex-start !important;
@@ -50,11 +49,11 @@ body {
     right: 35px;
   }
 
-  .show_nav.show .show_nav_content div{
+  .show_nav.show .show_nav_content div {
     margin-bottom: 20px;
   }
 
-  .show_nav.show .colors{
+  .show_nav.show .colors {
     position: absolute;
     color: black;
     display: flex;
@@ -63,33 +62,40 @@ body {
     left: 200px;
     top: 10px;
   }
-  .colors div{
+
+  .colors div {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-  }.colors div small{
+  }
+
+  .colors div small {
     font-weight: bold;
   }
-  .big_yellow{
+
+  .big_yellow {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: limegreen;
   }
-  .big_orange{
+
+  .big_orange {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: #f58220;
   }
-  .big_green{
+
+  .big_green {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: #39bdac;
   }
-  .big_pink{
+
+  .big_pink {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -114,16 +120,17 @@ body {
   }
 } */
 
-.colors{
+.colors {
   display: none;
 }
 
 @media (max-width: 420px) {
-  .show_nav.show .show_nav_content{
-    height: 50vh;
+  .show_nav.show .show_nav_content {
+    height: 80vh;
     right: 28px;
   }
-  .show_nav.show .colors{
+
+  .show_nav.show .colors {
     top: 180px;
     left: 10px;
   }
@@ -140,7 +147,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   border-radius: 10px;
-  
+
   gap: 10px;
   animation-name: animate_nav;
   animation-duration: 0.5s;
@@ -167,7 +174,7 @@ body {
   cursor: pointer;
 }
 
-.show_nav.show ~ .toggler_icon {
+.show_nav.show~.toggler_icon {
   transform: rotate(45deg);
 }
 
@@ -176,6 +183,7 @@ body {
     opacity: 0;
     transform: scale(0.5);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -245,7 +253,7 @@ body {
   font-weight: bolder;
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
   .main_content .header2 h4:first-child{
     top: -70px;
     left: 10px;
@@ -273,7 +281,7 @@ body {
     left: 540px !important;
     height: 30px !important;
   }
-}
+} */
 
 .main_content .header2 h4:last-child {
   font-size: 20px;
@@ -304,9 +312,16 @@ body {
 }
 
 @media (max-width:991.98px) {
-  .main_content .centered_content{
-    top: 13% !important;
-    display: none;
+  .main_content .centered_content {
+    top: 150px !important;
+    display: flex;
+    height: 170px;
+    width: 170px;
+
+  }
+
+  .main_content .centered_content p {
+    font-size: 12px !important;
   }
 }
 
@@ -368,11 +383,9 @@ body {
   top: -10px;
   left: 280px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -414,11 +427,9 @@ body {
   top: -9px;
   left: 228px;
   width: 100px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 3px 8px;
   background-repeat: repeat-y;
@@ -430,11 +441,9 @@ body {
   top: 13px;
   left: 152px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -452,11 +461,9 @@ body {
   position: absolute;
   top: 17px;
   left: 157px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 8px 8px;
   background-repeat: repeat-y;
@@ -475,11 +482,9 @@ body {
   position: absolute;
   top: 60px;
   left: 195px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -508,11 +513,9 @@ body {
   top: 80px;
   left: 677px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -531,11 +534,9 @@ body {
   position: absolute;
   left: 770px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -560,11 +561,9 @@ body {
   top: 20px;
   position: absolute;
   left: 810px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
@@ -588,11 +587,9 @@ body {
   top: 135px;
   left: 230px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -610,11 +607,9 @@ body {
   top: 118px;
   left: 331px;
   width: 10px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
@@ -633,11 +628,9 @@ body {
   top: 200px;
   left: 230px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
@@ -652,11 +645,9 @@ body {
   position: absolute;
   top: 80px;
   left: 675px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
@@ -681,11 +672,9 @@ body {
   top: 210px;
   left: 705px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
@@ -703,11 +692,9 @@ body {
   position: absolute;
   top: 80px;
   left: 890px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
@@ -729,11 +716,9 @@ body {
   position: absolute;
   top: 200px;
   left: 330px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
@@ -752,11 +737,9 @@ body {
   top: 250px;
   left: 360px;
   height: 2px;
-  background-image: linear-gradient(
-    to right,
-    #000 30%,
-    rgba(255, 255, 255, 0) 10%
-  );
+  background-image: linear-gradient(to right,
+      #000 30%,
+      rgba(255, 255, 255, 0) 10%);
   background-size: 10px 1px;
   background-repeat: repeat-x;
 }
@@ -806,11 +789,9 @@ body {
   top: 215px;
   left: 790px;
   width: 2px;
-  background-image: linear-gradient(
-    to bottom,
-    #000 10%,
-    rgba(255, 255, 255, 0) 0%
-  );
+  background-image: linear-gradient(to bottom,
+      #000 10%,
+      rgba(255, 255, 255, 0) 0%);
   background-position: left;
   background-size: 1px 8px;
   background-repeat: repeat-y;
