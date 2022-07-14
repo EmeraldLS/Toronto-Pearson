@@ -253,35 +253,240 @@ body {
   font-weight: bolder;
 }
 
-/* @media (max-width:768px) {
-  .main_content .header2 h4:first-child{
+@media (max-width:768px) {
+  .main_content .header2 h4:first-child {
     top: -70px;
     left: 10px;
   }
-  .main_content .header2 h4:last-child{
+
+  .main_content .header2 h4:last-child {
     left: 525px !important;
     top: -70px !important;
   }
-  
-  .home_icon{
+
+  .home_icon {
     left: 10px !important;
-    height: 30px !important;
+    height: 40px !important;
   }
 
-  .dash_1{
+  .dash_1 {
     top: -25px !important;
-    left: 40px !important;
-    width: 400px;
+    left: 65px !important;
+    width: 450px !important;
   }
-  .arrow_left_1{
+
+  .arrow_left_1 {
     top: -37px !important;
-    left: 45px !important;
+    left: 55px !important;
   }
-  .baggage_icon{
-    left: 540px !important;
-    height: 30px !important;
+
+  .baggage_icon {
+    left: 515px !important;
+    height: 40px !important;
   }
-} */
+
+  .arrow_left_2,
+  .arrow_left_3 {
+    display: none;
+  }
+
+  .custom2_icon {
+    top: 120px !important;
+    left: 520px !important;
+    height: 40px !important;
+  }
+
+  .dash_14 {
+    left: 535px !important;
+    height: 120px !important;
+    top: 0px !important;
+  }
+
+  .covid_icon {
+    left: 420px !important;
+    top: 6px !important;
+    height: 40px !important;
+  }
+
+  .dash_7 {
+    width: 60px !important;
+    top: 25px !important;
+    left: 460px !important;
+  }
+
+  .arrow_right_2 {
+    top: 13px !important;
+    left: 520px !important;
+  }
+
+  .dash_8 {
+    display: none;
+  }
+
+  .clearing_entry_icon {
+    height: 40px !important;
+    left: 420px !important;
+    top: 58px !important;
+    z-index: 2;
+  }
+
+  .custom_png_icon {
+    top: 120px !important;
+    left: 420px !important;
+    height: 40px !important;
+  }
+
+  .arrow_up_1 {
+    top: 70px !important;
+    left: 528px !important;
+  }
+
+  .dash_12 {
+    top: 50px !important;
+    height: 70px !important;
+    left: 440px !important;
+  }
+
+  .dash_17 {
+    display: none;
+  }
+
+  .dash_6 {
+    width: 60px !important;
+    top: 140px !important;
+    left: 460px !important;
+  }
+
+  .dash_13 {
+    display: none;
+  }
+
+  .arrow_up_2 {
+    display: none;
+  }
+
+  .dash_2 {
+    left: 30px !important;
+    top: -30px !important;
+  }
+
+  .checking_icon {
+    height: 40px !important;
+    top: -10px !important;
+    left: 10px !important;
+  }
+
+  .all_clear_icon {
+    height: 40px !important;
+    top: -10px !important;
+    left: 100px !important;
+  }
+
+  .dash_3 {
+    left: 50px !important;
+  }
+
+  .arrow_right_1 {
+    top: 0px !important;
+    left: 70px !important;
+  }
+
+  .dash_4 {
+    top: 30px !important;
+    left: 120px !important;
+  }
+
+  .arrow_down_unknown {
+    display: block !important;
+  }
+
+  .arrow_left_4,
+  .arrow_down_1,
+  .dash_5 {
+    display: none;
+  }
+
+  .going_abroad_icon {
+    height: 40px !important;
+    top: 90px !important;
+    left: 50px !important;
+  }
+
+  .dash_9 {
+    top: 75px !important;
+    left: 69px !important;
+    width: 110px !important;
+  }
+
+  .dash_11 {
+    left: 69px !important;
+    width: 110px !important;
+    top: 145px !important;
+  }
+
+  .border_control {
+    height: 40px !important;
+    top: 90px !important;
+    left: 150px !important;
+  }
+
+  .dash_15 {
+    left: 120px !important;
+    top: 150px !important;
+  }
+
+  .border_control_icon2 {
+    left: 100px !important;
+    top: 180px !important;
+    height: 40px !important;
+  }
+
+  .dash_16 {
+    top: 200px !important;
+    left: 140px !important;
+    width: 330px !important;
+  }
+
+  .arrow_right_3 {
+    top: 188px !important;
+    left: 170px !important;
+  }
+
+  .flight_depart_icon {
+    top: 180px !important;
+    height: 40px !important;
+    left: 220px !important;
+  }
+
+  .arrow_right_4 {
+    top: 188px !important;
+    left: 290px !important;
+  }
+
+  .arrived_icon {
+    height: 40px !important;
+    top: 180px !important;
+    left: 340px !important;
+  }
+
+  .arrow_right_5 {
+    top: 188px !important;
+    left: 410px !important;
+  }
+
+  .welcome_icon {
+    height: 40px !important;
+    top: 180px !important;
+    left: 470px !important;
+  }
+
+  .arrow_up_3 {
+    top: 150px !important;
+    left: 483px !important;
+  }
+
+
+}
 
 .main_content .header2 h4:last-child {
   font-size: 20px;
@@ -311,14 +516,18 @@ body {
   justify-content: center;
 }
 
-@media (max-width:991.98px) {
+
+@media (max-width:768px) {
   .main_content .centered_content {
-    top: 150px !important;
+    top: 130px !important;
     display: flex;
     height: 170px;
     width: 170px;
-
+    left: 215px !important;
   }
+}
+
+@media (max-width:991.98px) {
 
   .main_content .centered_content p {
     font-size: 12px !important;
@@ -813,6 +1022,19 @@ body {
   }
 }
 
+@media (max-width:767.98px) {
+  body {
+    background-image: linear-gradient(to right, var(--light-blue) 55%, var(--lighter-blue) 45%) !important;
+  }
+}
+
+@media (max-width:991.98px) {
+  body {
+    background-image: linear-gradient(to right, var(--light-blue) 70%, var(--lighter-blue) 30%) !important;
+  }
+
+}
+
 @media (max-width: 992px) {
   .hero_content {
     overflow-y: hidden !important;
@@ -820,9 +1042,17 @@ body {
     left: 0;
   }
 
-  #hero {
-    width: 100%;
+  .hero_content {
+    overflow-y: hidden !important;
+
+    min-height: 100vh;
+    left: 0;
   }
+
+  body {
+    background-image: linear-gradient(to right, var(--light-blue) 60%, var(--lighter-blue) 40%);
+  }
+
 
   .header_top span {
     position: absolute;
@@ -835,6 +1065,18 @@ body {
     position: absolute;
     top: 65vh;
     left: 50%;
+  }
+}
+
+@media (max-width:420px) {
+  body {
+    background-image: linear-gradient(to right, var(--light-blue) 80%, var(--lighter-blue) 20%) !important;
+  }
+}
+
+@media (max-width:360px) {
+  body {
+    background-image: linear-gradient(to right, var(--light-blue) 85%, var(--lighter-blue) 15%) !important;
   }
 }
 

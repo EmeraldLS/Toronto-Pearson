@@ -1010,6 +1010,10 @@ body {
     .hero_content {
         width: 160vh !important;
     }
+
+    body {
+        background-image: linear-gradient(to right, var(--light-blue) 60%, var(--lighter-blue) 40%) !important;
+    }
 }
 
 @media (max-width:992px) {
