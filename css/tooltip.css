@@ -11,7 +11,7 @@
 .mytooltip1 .mytooltiptext2 {
   visibility: hidden;
   position: absolute;
-  left: 90px;
+  left: 200px;
   top: 0;
   width: 200px;
   background-color: white;
@@ -20,11 +20,18 @@
   border-radius: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  clip-path: polygon(69% 0, 69% 5%, 100% 5%, 100% 100%, 0 100%, 0 34%, 0 0);
+  clip-path: polygon(40% 0, 40% 15%, 100% 15%, 100% 100%, 0 100%, 0 34%, 0 0);
   border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
+}
+
+@media (max-width:768px) {
+  .mytooltiptext2 {
+    top: -50px !important;
+    left: 60px !important;
+  }
 }
 
 /* Baggage tooltip */
@@ -49,7 +56,7 @@
 }
 
 @media (max-width:768px) {
-  .mytooltip1 .mytooltiptext7{
+  .mytooltip1 .mytooltiptext7 {
     left: 580px;
   }
 }
@@ -74,6 +81,13 @@
   z-index: 1;
 }
 
+@media (max-width:768px) {
+  .mytooltiptext1 {
+    top: 40px !important;
+    left: 50px !important;
+  }
+}
+
 .mytooltip1 .mytooltiptext3 {
   visibility: hidden;
   position: absolute;
@@ -95,10 +109,11 @@
 }
 
 @media (max-width:768px) {
-  .mytooltiptext3{
+  .mytooltiptext3 {
     left: 510px !important;
   }
 }
+
 .mytooltip1 .mytooltiptext4 {
   visibility: hidden;
   position: absolute;
@@ -120,7 +135,7 @@
 }
 
 @media (max-width:768px) {
-  .mytooltiptext4{
+  .mytooltiptext4 {
     left: 510px !important;
     top: 0 !important;
   }
