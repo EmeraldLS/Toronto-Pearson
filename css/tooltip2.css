@@ -68,7 +68,45 @@
 }
 
 @media (max-width:767.98px) {
-  .mytooltip1 .mytooltiptext7 {}
+  .mytooltip1 .mytooltiptext7 {
+    left: 560px !important;
+    top: -30px !important;
+  }
+
+  .mytooltip1 .mytooltiptext9 {
+    left: 0 !important;
+    top: 10px !important;
+  }
+
+  .mytooltip1 .mytooltiptext3 {
+    left: 470px !important;
+  }
+
+  .mytooltip1 .mytooltiptext6 {
+    left: 510px !important;
+    top: 30px !important;
+  }
+
+  .mytooltip1 .mytooltiptext8 {
+    left: 390px !important;
+    top: 100px !important;
+  }
+
+  .mytooltip1 .mytooltiptext5 {
+    left: 150px !important;
+    top: 150px !important;
+  }
+
+  .mytooltip1 .mytooltiptext1 {
+    top: -20px !important;
+    left: 150px !important;
+  }
+
+  .mytooltip1 .mytooltiptext2 {
+    left: 60px !important;
+    top: -20px !important;
+  }
+
 }
 
 .mytooltip1 .mytooltiptext1 {

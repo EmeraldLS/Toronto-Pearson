@@ -259,7 +259,42 @@ body {
     font-weight: bolder;
 }
 
+.dash_abroad_unknown,
+.dash_border_unknown {
+    display: none;
+}
+
 @media (max-width:768px) {
+    .dash_abroad_unknown {
+        display: block;
+        height: 80px;
+        width: 2px;
+        position: absolute;
+        top: 70px;
+        left: 67px;
+        background-image: linear-gradient(to bottom,
+                #000 10%,
+                rgba(255, 255, 255, 0) 0%);
+        background-position: left;
+        background-size: 8px 8px;
+        background-repeat: repeat-y;
+    }
+
+    .dash_border_unknown {
+        display: block;
+        height: 80px;
+        width: 2px;
+        position: absolute;
+        top: 70px;
+        left: 170px;
+        background-image: linear-gradient(to bottom,
+                #000 10%,
+                rgba(255, 255, 255, 0) 0%);
+        background-position: left;
+        background-size: 8px 8px;
+        background-repeat: repeat-y;
+    }
+
     .main_content .header2 h4:first-child {
         top: -70px;
         left: 10px;
@@ -1008,7 +1043,7 @@ body {
 
 @media (max-width:767.98px) {
     .hero_content {
-        width: 160vh !important;
+        width: 90vh !important;
     }
 
     body {
@@ -1022,7 +1057,6 @@ body {
 
         min-height: 100vh;
         left: 0;
-        width: 130vh !important;
     }
 
     body {

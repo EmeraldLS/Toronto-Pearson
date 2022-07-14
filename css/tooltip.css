@@ -64,7 +64,7 @@
 .mytooltip1 .mytooltiptext1 {
   visibility: hidden;
   position: absolute;
-  left: 270px;
+  left: 370px;
   top: 0;
 
   width: 200px;
@@ -139,6 +139,20 @@
     left: 510px !important;
     top: 0 !important;
   }
+
+  .mytooltiptext4 {
+    left: 470px !important;
+    top: 0px !important;
+  }
+
+  .mytooltiptext3 {
+    left: 470px !important;
+  }
+
+  .mytooltiptext6 {
+    left: 160px !important;
+    top: 150px !important;
+  }
 }
 
 
@@ -146,7 +160,7 @@
 .mytooltiptext5 {
   visibility: hidden;
   position: absolute;
-  left: 280px;
+  left: 370px;
   top: 115px;
 
   width: 300px;

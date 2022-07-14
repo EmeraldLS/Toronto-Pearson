@@ -214,6 +214,11 @@ body {
   position: relative;
 }
 
+.dash_abroad_unknown,
+.dash_border_unknown {
+  display: none;
+}
+
 .header_top h4 {
   padding: 5px 15px;
   background-color: var(--dark-blue);
@@ -410,6 +415,36 @@ body {
     height: 40px !important;
     top: 90px !important;
     left: 50px !important;
+  }
+
+  .dash_abroad_unknown {
+    display: block;
+    height: 80px;
+    width: 2px;
+    position: absolute;
+    top: 70px;
+    left: 67px;
+    background-image: linear-gradient(to bottom,
+        #000 10%,
+        rgba(255, 255, 255, 0) 0%);
+    background-position: left;
+    background-size: 8px 8px;
+    background-repeat: repeat-y;
+  }
+
+  .dash_border_unknown {
+    display: block;
+    height: 80px;
+    width: 2px;
+    position: absolute;
+    top: 70px;
+    left: 170px;
+    background-image: linear-gradient(to bottom,
+        #000 10%,
+        rgba(255, 255, 255, 0) 0%);
+    background-position: left;
+    background-size: 8px 8px;
+    background-repeat: repeat-y;
   }
 
   .dash_9 {
